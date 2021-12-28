@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>TPK Shop</title>
+    <link href="File/index.css" rel="stylesheet" />
+    <link href="File/grid.css" rel="stylesheet" />
+    <link rel ="icon" href="https://www.vhv.rs/dpng/d/213-2136287_transparent-pirate-logo-png-straw-hat-logo-png.png" type = "image/x-icon">
+</head>
+<body>  
+    <!-- Menu -->
+    <div class="nav">
+        <div class="item-nav">
+            <a class="item" href="index.html">TRANG CHỦ</a>
+            <a class="item" href="File/Tintuc/Tintuc.html">TIN TỨC</a>
+            <a class="item" href="File/Sanpham/Sanpham.html">SẢN PHẨM</a>
+            <a class="item" href="File/Dichvu/Dichvu.html">DỊCH VỤ</a>
+            <a class="item" href="File/Lienhe/Lienhe.html">LIÊN HỆ</a>
+        </div>
+    </div>
+    <!-- Menu Mobile Tablet -->
+    <div class="nav-mobile">
+        <label for="nav-mobile-input" class="icon-menu-mobile">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+        </label>
+        <input hidden type="checkbox" name="" class="nav--input" id="nav-mobile-input" />
+        <div class="item-nav-mobile">
+            <a class="item-mobile" href="../../index.html">TRANG CHỦ</a>
+            <a class="item-mobile" href="File/Tintuc/Tintuc.html">TIN TỨC</a>
+            <a class="item-mobile" href="File/Sanpham/Sanpham.html">SẢN PHẨM</a>
+            <a class="item-mobile" href="File/Dichvu/Dichvu.html">DỊCH VỤ</a>
+            <a class="item-mobile" href="File/Lienhe/Lienhe.html">LIÊN HỆ</a>
+        </div>
+        <label for="nav-mobile-input" class="overplay "></label>
+    </div>
+    <!-- Header -->
+    <div class="header">         
+        <div class="slide">
+            <div class="change-img">
+                <img src="File/img/1.jpg" alt="" />
+                <img src="File/img/2.jpg" alt="" />
+                <img src="File/img/3.jpg" alt="" />
+                <img src="File/img/4.jpg" alt="" />
+                <img src="File/img/5.jpg" alt="" />
+                <img src="File/img/6.jpg" alt="" />
+            </div>
+            
+                
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="icon-left svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path onclick="Back();"  fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="icon-right svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path onclick="Next();" fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                
+         </div>
+       
+    </div>
+    <!-- Sanphamhot -->
+    <div class="sanphamhot ">
+        <div class="itemhot">
+        <h2>SẢN PHẨM <span>HOT</span> TRONG TUẦN</h2>
+        <div class="grid">
+        <div class="row">
+            <div class="col l-4 m-6">
+                <a href="#"><img src="File/img/bo6mockhoa.jpg" /></a>
+                <a href="#">Bộ 6 móc khóa</a>
+                <p>60.000đ</p>
+            </div>
+            <div class="col l-4 m-6">
+                <a href="#"><img src="File/img/mohinhluffygear3.jpg" /></a>
+                <a href="#">Mô hình Luffu Gear 3</a>
+                <p>299.000đ</p>
+            </div>
+            <div class="col l-4 m-6">
+                <a href="#"><img src="File/img/mohinhzoro.jpg" /></a>
+                <a href="#">Mô hình Zoro Wano</a>
+                <p>399.000đ</p>
+            </div>
+            <div class="col l-4 m-6">
+                <a href="#"><img src="File/img/mohinhnarutocuuvi.jpg" /></a>
+               <a href="#">Mô hình Naruto lục đạo</a>
+                <p>299.000đ</p>
+            </div>
+            <div class="col l-4 m-6">
+                <a href="#"><img src="File/img/mohinhmadara.jpg" /></a>
+                <a href="#">Mô hình Uchiha Madara</a>
+                <p>199.000đ</p>
+            </div>
+            <div class="col l-4 m-6">
+                <a href="#"><img src="File/img/mohinhnezuko.jpg" /></a>
+                <a href="#">Mô hình Nezuko</a>
+                <p>249.000đ</p>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <!-- Tintuchot -->
+    <div class="tintuchot ">
+        <div class="itemhot">
+        <h2>TIN TỨC <span>HOT</span> TRONG TUẦN</h2>
+        <div class="grid">
+        <div class="row">
+            <div class="col l-4 m-6">
+                <a href="File/Tintuc/Onepiece/newsop1.html"><img src="File/img/tintuchot1.jpg" /></a>
+                <a href="File/Tintuc/Onepiece/newsop1.html">Sau tập 1000, One Piece sẽ cho ra mắt phim điện ảnh One Piece Film Red</a>
+                
+            </div>
+            <div class="col l-4 m-6">
+                <a href="#"><img src="File/img/tintuchot2.png" /></a>
+                <a href="#">Ranking of Kings – Một Anime siêu dễ thương</a>                
+            </div>
+            <div class="col l-4 m-6">
+                <a href="#"><img src="File/img/tintuchot3.jpg" /></a>
+                <a href="#">Boruto tập 218: Xoa dịu phần nào nỗi buồn cho những fan của Cửu Vỹ Kurama</a>
+                
+            </div>
+            <div class="col l-4 m-6">
+                <a href="#"><img src="File/img/tintuchot4.jpg" /></a>
+                <a href="#">Thương hiệu của bộ anime Kimetsu no Yaiba kiếm được hơn 1000 tỷ yên chỉ trong năm 2020</a>
+                
+            </div>
+            <div class="col l-4 m-6">
+                <a href="#"><img src="File/img/tintuchot5.jpg" /></a>
+                <a href="#">Tokyo Revengers từ bộ anime không được kì vọng quá cao, trở thành tân binh khủng long trong nền công nghiệp anime</a>
+                
+            </div>
+            <div class="col l-4 m-6">
+                <a href="#"><img src="File/img/tintuchot6.jpg" /></a>
+                <a href="#">Pokemon Evolutions: Dự án Anime mới được công bố</a>               
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <!-- Feedback -->
+    <div class="feedback">
+        <h2>FEEDBACK CỦA KHÁCH HÀNG</h2>
+        <div class="slide-feedback">
+            <div class="change-img-feedback">
+                <img class="feedbackimg" src="File/img/feedback1.jpg" />
+                <img class="feedbackimg" src="File/img/feedback2.jpg" />
+                <img class="feedbackimg" src="File/img/feedback3.jpg" />
+                <img class="feedbackimg" src="File/img/feedback4.jpg" />
+                <img class="feedbackimg" src="File/img/feedback5.jpg" />      
+                <img class="feedbackimg" src="File/img/feedback2.jpg" />
+            </div>
+        </div>
+     </div>
+     <!-- Footer -->
+    <div class="footer">
+        <h2>TPK Shop xin chân thành cảm ơn quý khách</h2>
+        <div class="masale">            
+            <form class="nhanmasale">
+                <p>Nhận mã sale</p>
+                <p>
+                    <label for="gmail">Gmail:</label>
+                    <input class="input-gmail"  type="text"  required >                    
+                </p>
+                <div class="guigmail" ><span>Nhận mã</span></div>
+            </form>
+        </div>
+        <div class="sup-footer">            
+            <p class="bonuslink">Xem Anime: <a style="color:white" href="https://vuighe.net/">vuighe.net</a></p>
+            <p class="bonuslink">Đọc truyện: <a style="color:white" href="https://www.nettruyenonline.com/">nettruyenonline.com</a></p>
+            <div class="info">
+                <p>Địa chỉ 1: 22/12, Nhà Bè, TPHCM<span>SĐT: 1234567890</span> </p> 
+                <p>Địa chỉ 2: Nguyễn Văn Linh, Q7, TPHCM<span>SĐT: 1234567890</span> </p>
+            </div>
+        </div>
+        <div class="icon-footer">
+                <a  href="#"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="fb-icon" fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg></a>
+                <a  href="#"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path class="ins-icon" fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a>
+                <a class="tw-icon" href="#"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="tw-icon" fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>
+         </div>
+    </div>
+
+    <!-- Hiển thị mã sale -->
+    <div class="outputmasale">
+        <h2>Mã sale 20%</h2>
+        <span>Gomu Gomu No</span>
+        <div class="closesale"><span>Đóng</span></div>
+    </div>
+    <!-- Lời chào mở đầu -->
+    <div class="firststart close">
+        <div class="text-firststart">
+            <h2>Chào mừng quý khách đến với TPK Shop</h2>
+            <p>TPK Shop được thành lập năm 2022. Chuyên bán những sản phẩm liên quan đến Anime. Ví dụ như là mô hình nhân vật anime, phụ kiện quần áo nhân vật anime ,...  Với phương châm kinh doanh hài lòng trước nhận tiền sau TPK Shop luôn cố gắng mang lại giá sản phẩm ổn định và đảm bảo có nguồn hàng sẵn cho quý khách hàng. Cố gắng vì khách hàng là động lực để cửa hàng cố gắng phát triển hơn.</p>
+            <div class="closefirststart">
+            <h2 class="closebutton">Chúc quý khách một ngày vui vẻ</h2>
+            </div>
+        </div>
+    </div>
+    <div class="overplayy close"></div>
+    
+    
+    
+    
+    <!-- JS -->
+    
+    <!-- Header JS slideshow -->
+    <script>
+        
+        var KichThuoc = document.getElementsByClassName("slide")[0].clientWidth;
+        var ChuyenSlide = document.getElementsByClassName("change-img")[0];
+        var Img = ChuyenSlide.getElementsByTagName("img");
+        var Max = KichThuoc * Img.length;
+        Max -= KichThuoc;
+        var Chuyen = 0;
+        function Next() {
+            if (Chuyen < Max)
+                Chuyen += KichThuoc;
+            else Chuyen = 0;
+            ChuyenSlide.style.marginLeft = '-' + Chuyen + 'px';
+        }
+        function Back() {
+            if (Chuyen == 0) Chuyen = Max;
+            else Chuyen -= KichThuoc;
+            ChuyenSlide.style.marginLeft = '-' + Chuyen + 'px';
+        }
+        setInterval(function () {
+            Next();
+        }, 3000);
+
+    </script> 
+    <!-- Feedback JS slideshow -->
+    <script>  
+        var KichThuocFeedback = document.getElementsByClassName("slide-feedback")[0].clientWidth;
+        var ChuyenSlideFeedback = document.getElementsByClassName("change-img-feedback")[0];
+        var ImgFeedback = ChuyenSlideFeedback.getElementsByClassName("feedbackimg");
+        var MaxFeedback = KichThuocFeedback * Img.length;
+        MaxFeedback -= KichThuocFeedback;
+        var ChuyenFeedback = 0;
+        function NextFeedback() {
+            if (ChuyenFeedback < MaxFeedback)
+                ChuyenFeedback += KichThuocFeedback;
+            else ChuyenFeedback = 0;
+            ChuyenSlideFeedback.style.marginLeft = '-' + ChuyenFeedback + 'px';
+        }
+        function BackFeedback() {
+            if (ChuyenFeedback == 0) ChuyenFeedback = MaxFeedback;
+            else ChuyenFeedback -= KichThuocFeedback;
+            ChuyenSlideFeedback.style.marginLeft = '-' + ChuyenFeedback + 'px';
+        }
+        setInterval(function () {
+            NextFeedback();
+        }, 3000);
+
+    </script>
+    <!-- Outputmasale -->
+    <script>
+        const Guigmail = document.querySelector('.guigmail')
+        const Outputmasale = document.querySelector('.outputmasale')
+        const Closemasale = document.querySelector('.closesale')
+        function showMasale() {
+            Outputmasale.classList.add('open')
+        }
+        function closeMasale() {
+            Outputmasale.classList.remove('open')
+        }
+
+        Guigmail.addEventListener('click', showMasale)
+        Closemasale.addEventListener('click', closeMasale)
+
+    </script>
+    <!-- CloseFirstStart -->
+        <script>
+            const Closebutton = document.querySelector('.closebutton')
+            const Firststart = document.querySelector('.firststart')
+            const Overplay = document.querySelector('.overplayy.close')
+            function closeFirststart() {
+                Firststart.classList.remove('close')
+                Overplay.classList.remove('close')
+            }
+
+            Closebutton.addEventListener('click', closeFirststart)
+            Overplay.addEventListener('click', closeFirststart)
+            
+
+        </script>
+    
+</body>
+</html>

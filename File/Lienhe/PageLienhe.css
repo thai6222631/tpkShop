@@ -1,0 +1,902 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,Arial,Helvetica,"Droid Sans",sans-serif;
+    box-sizing: border-box;
+    
+}
+body {
+   
+}
+.clear {
+    clear:both;
+}
+ul {
+    margin:0;
+    padding:0;
+}
+a {
+    text-decoration:none;
+    color:black;
+}
+/*Menu*/
+.nav {
+    height: 50px;
+    background-color: black;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index:1;
+    
+}
+.nav .item-nav {
+    display:flex;
+}
+.nav .item-nav a {
+    display:inline-block;
+    height:50px;
+    line-height:50px;
+    width:20%;
+    text-align:center;
+    font-weight:600;
+    color:tan;
+    letter-spacing:0.8px;
+}
+.nav .item-nav a {
+    color:tan;
+   
+}
+.nav .item-nav a:hover {
+    border-bottom:3px aqua solid;
+    cursor:pointer;
+}
+/*Menu-mobile*/
+.nav-mobile {
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;   
+}
+.nav-mobile .icon-menu-mobile {
+    height:100%;
+}
+.nav-mobile .icon-menu-mobile svg {
+    color:tan;
+    height:100%;
+    width:9%;
+    float:right;
+    cursor:pointer;
+}
+.nav-mobile .item-nav-mobile {   
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:black;
+    width: 70%;
+    transform:translateX(100%);
+    z-index:1;
+    
+}
+.nav-mobile .item-nav-mobile a {   
+    height: 50px;
+    line-height: 50px;
+    display:block;
+    text-align: center;
+    font-weight: 600;
+    color: tan;
+    letter-spacing: 0.8px;
+}
+.nav-mobile .item-nav-mobile a {
+    color: tan;
+}
+.nav-mobile .item-nav-mobile a:hover {
+    border-bottom: 3px aqua solid;
+    cursor: pointer;
+}
+.overplay {
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.6);
+    cursor:pointer;   
+    display:none;
+}
+.nav--input:checked ~ .overplay {
+    display:block;
+}
+.nav--input:checked ~ .item-nav-mobile {
+    transform:translateX(0%);
+}
+/*Header*/
+.header {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    background-image: url('../img/backgrlienhe.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.header img {
+    width:60%;
+    border-radius:50%;
+}
+/*Contact*/
+.contactslide {
+    width: 100%;
+    background-color:black;
+    padding-bottom:30px;
+}
+.contactslide .contact {
+    width:90%;
+    padding:30px 5% 0 5%;
+    display:block;
+    color:tan;
+}
+.contactslide .contact .braedrumb p a {
+    color:tan;
+}
+.contactslide .contact p {
+    font-size:15px;
+    color:tan;
+}
+.contactslide .contact h2 {
+    margin-top:25px;
+    font-weight:600;
+    font-size:30px;
+    color:tan;
+}
+.contactslide .contact-info {
+    width:90%;
+    margin:3% 5% 0 5%;
+    color:tan;
+}
+.contactslide .contact-info .map-contact {
+    width:100%;
+    display:flex;
+    margin-top:3%;
+}
+iframe {
+    width:100%;
+    height:400px;
+}
+.contactslide .contact-info .map-contact .diachi1, .diachi2 {
+    width:50%;
+    
+}
+.contactslide .contact-info .map-contact .info-contact {
+    width:48%;
+    margin-left:2%;
+    
+}
+svg {
+    width:2.5%;
+}
+.contactslide .contact-info .map-contact .info-contact .sup-info-contact {
+    margin:20px 0 0 20px;
+    opacity:0.7;
+}
+.contactslide .contact-info .map-contact .info-contact h2 {
+    font-size:25px;
+}
+.contactslide .contact-info .map-contact .info-contact .sup-info-contact p {
+    margin:15px 0 15px 0;
+}
+
+/*Formcontact*/
+.formcontact {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 19%;
+}
+.formcontact h2 {
+    width:100%;
+    text-align:center;
+    margin-top:30px;
+    font-size:30px;
+}
+
+.formcontact .form {
+    width:50%;
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:10px;
+    justify-content:center;
+    
+}
+.formcontact .form .fall {
+    width:49%;
+    height:20%;
+    margin-top:4%;
+    border: 1px solid #ddd;
+    border-radius:5px;
+    font-size:17px;
+}
+.formcontact .form .fsdt {
+    margin-left:2%;
+}
+.formcontact .form .fdiachi {
+    margin-left:2%;
+}
+.formcontact .form .fcontent {
+    width:100%;
+    height:100%;
+    margin-top:4%;
+    border: 1px solid #ddd;
+    border-radius:5px;
+    padding: 10px 0 0 0;
+    font-size:17px;
+}
+.formcontact .form button {
+    line-height: 31px;
+    border-radius: 5px;
+    border: 2px solid #ed1b24;
+    text-transform: uppercase;
+    padding: 0 20px;
+    background: #fff;
+    color: #ed1b24;
+    font-weight: 400;
+    font-size: 14px;    
+    cursor: pointer;
+    transition: all .35s;
+    margin-top:2%;
+}
+.formcontact .form button:hover {
+    color: #fff;
+    background: #ed1b24;
+    box-shadow: 0 0 10px -3px #000;
+}
+   
+
+/*Footer*/
+.footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-top:2px solid black;
+    
+}
+.footer h2 {
+    width:100%;
+    text-align:center;
+    padding:20px 0 20px 0;
+}
+.footer .masale {
+    width:50%;
+    background-color:black;
+    padding-top:20px;
+    padding-bottom:50px;
+}
+
+.footer .masale form {
+    text-align:center;
+}
+.footer .masale form p {
+    font-size:25px;
+    margin-bottom:20px;
+    font-weight:500;
+    color:red;
+}
+.footer .masale form p label {
+    font-size:20px;
+    color:tan;
+}
+.footer .masale form .guigmail span {
+    width:15%;
+    font-size:20px;
+    border-radius:200px;
+    cursor:pointer;
+    padding:5px 5px 5px 5px;
+    background-color:white;
+    
+    
+}
+.footer .masale form p .input-gmail {
+    width:80%;
+    font-size:25px;
+    border-radius:8px;
+}
+.footer .sup-footer {
+    width:35%;
+    background-color:black;
+    padding-top:20px;
+    
+}
+.footer .icon-footer {
+    width:15%;
+    display:flex;
+    flex-wrap:wrap;
+    background:black;
+    justify-items:center;
+    align-content:center;
+   
+}
+.footer .icon-footer a {
+    display:inline-block;
+    width:100%;
+    text-align:center;
+}
+.footer .icon-footer a svg {
+    width:25%;
+    color:tan;
+ 
+}
+
+.footer .sup-footer .bonuslink {
+    text-align:justify;
+    font-size:20px;   
+    padding:10px 10px 0px 0px;
+    color:tan;
+}
+.footer .sup-footer .bonuslink p:hover {
+    color:goldenrod;
+}
+.footer .sup-footer .info {
+    margin-top:30px;
+    display:inline-block;
+}
+.footer .sup-footer .info p {
+    font-size:15px;
+    background-color:black;
+    padding:0px 10px 10px 0px;
+    color:tan;
+    opacity:0.7;
+}
+.footer .sup-footer .info p span {
+    margin-left:10px;
+}
+a:hover .fb-icon {
+    color: goldenrod;
+}
+a:hover .ins-icon {
+    color: goldenrod;
+}
+a:hover .tw-icon {
+    color: goldenrod;
+}
+/*outputmasale*/
+.outputmasale {
+    width: 60%;
+    border-radius:10px;
+    background-color: black;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    display:none;    
+}
+.outputmasale.open {
+    display:block;
+}
+.outputmasale h2 {
+    margin:10% 0 20px 0;
+    color:tan;
+}
+.outputmasale span {
+    font-size:20px;
+    color:tan;
+    opacity:0.7;
+}
+.outputmasale .closesale {
+    font-size:18px;
+    margin-top:25%;
+    padding:10px 0 10px 0;
+}
+.outputmasale .closesale span {
+    border:1px solid black;
+    padding:5px;
+    cursor:pointer;
+    background-color:red;
+    color:black;
+}
+
+@media (min-width:851px){
+    .nav {
+        display:block;
+    }
+    .nav-mobile {
+        display:none;
+    }
+}
+@media (min-width:561px) and (max-width:900px){
+    .nav-mobile {
+        display:block;
+    }
+    .nav {
+        display:none;
+    }
+    /*Contact-ipad*/
+    .contactslide {
+        width: 100%;
+        background-color:black;
+        padding-bottom:30px;
+    }
+    .contactslide .contact {
+        width:90%;
+        padding:30px 5% 0 5%;
+        display:block;
+        color:tan;
+    }
+    .contactslide .contact .braedrumb p a {
+        color:tan;
+    }
+    .contactslide .contact p {
+        font-size:12px;
+        color:tan;
+    }
+    .contactslide .contact h2 {
+        margin-top:25px;
+        font-weight:600;
+        font-size:20px;
+        color:tan;
+    }
+    .contactslide .contact-info {
+        width:90%;
+        margin:3% 5% 0 5%;
+        color:tan;
+    }
+    .contactslide .contact-info .map-contact {
+        width:100%;        
+        margin-top:3%;
+        display:flex;
+        flex-wrap:wrap;
+    }
+    iframe {
+        width:100%;
+        
+    }
+    .contactslide .contact-info .map-contact .diachi1, .diachi2 {
+        width:100%;
+    
+    }
+    .contactslide .contact-info .map-contact .info-contact {
+        width:100%;
+        border:solid 1px tan ;
+        margin-left:0;
+    }
+    svg {
+        width:2.5%;
+    }
+    .contactslide .contact-info .map-contact .info-contact .sup-info-contact {
+        margin:20px 0 0 20px;
+        opacity:0.7;
+    }
+    .contactslide .contact-info .map-contact .info-contact h2 {
+        font-size:20px;
+    }
+    .contactslide .contact-info .map-contact .info-contact .sup-info-contact p {
+        margin:15px 0 15px 0;
+        font-size:12px;
+    }    
+    /*Formcontact*/
+.formcontact {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 38%;
+}
+.formcontact h2 {
+    width:100%;
+    text-align:center;
+    margin-top:30px;
+    font-size:20px;
+}
+
+.formcontact .form {
+    width:80%;
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:10px;
+    justify-content:center;
+    
+}
+.formcontact .form .fall {
+    width:49%;
+    height:20%;
+    margin-top:4%;
+    border: 1px solid #ddd;
+    border-radius:5px;
+    font-size:17px;
+}
+.formcontact .form .fsdt {
+    margin-left:2%;
+}
+.formcontact .form .fdiachi {
+    margin-left:2%;
+}
+.formcontact .form .fcontent {
+    width:100%;
+    height:100%;
+    margin-top:4%;
+    border: 1px solid #ddd;
+    border-radius:5px;
+    padding: 10px 0 0 0;
+    font-size:17px;
+}
+.formcontact .form button {
+    line-height: 31px;
+    border-radius: 5px;
+    border: 2px solid #ed1b24;
+    text-transform: uppercase;
+    padding: 0 20px;
+    background: #fff;
+    color: #ed1b24;
+    font-weight: 400;
+    font-size: 14px;    
+    cursor: pointer;
+    transition: all .35s;
+    margin-top:2%;
+}
+.formcontact .form button:hover {
+    color: #fff;
+    background: #ed1b24;
+    box-shadow: 0 0 10px -3px #000;
+}
+    /*Footer*/
+.footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-top:2px solid black;
+    
+}
+.footer h2 {
+    width:100%;
+    text-align:center;
+    padding:20px 0 20px 0;
+    font-size:20px;
+}
+.footer .masale {
+    width:50%;
+    background-color:black;
+    padding-top:20px;
+    padding-bottom:50px;
+}
+
+.footer .masale form {
+    text-align:center;
+}
+.footer .masale form p {
+    font-size:15px;
+    margin-bottom:20px;
+    font-weight:500;
+    color:red;
+}
+.footer .masale form p label {
+    font-size:12px;
+    color:tan;
+}
+.footer .masale form .guigmail span {
+    width:15%;
+    font-size:12px;
+    border-radius:200px;
+    cursor:pointer;
+    padding:5px 5px 5px 5px;
+    background-color:white;
+    
+    
+}
+.footer .masale form p .input-gmail {
+    width:80%;
+    font-size:15px;
+    border-radius:8px;
+}
+.footer .sup-footer {
+    width:35%;
+    background-color:black;
+    padding-top:20px;
+    
+}
+.footer .icon-footer {
+    width:15%;
+    display:flex;
+    flex-wrap:wrap;
+    background:black;
+    justify-items:center;
+    align-content:center;
+   
+}
+.footer .icon-footer a {
+    display:inline-block;
+    width:100%;
+    text-align:center;
+}
+.footer .icon-footer a svg {
+    width:25%;
+    color:tan;
+ 
+}
+
+.footer .sup-footer .bonuslink {
+    text-align:justify;
+    font-size:12px;   
+    padding:10px 10px 0px 0px;
+    color:tan;
+}
+.footer .sup-footer .bonuslink p:hover {
+    color:goldenrod;
+}
+.footer .sup-footer .info {
+    margin-top:30px;
+    display:inline-block;
+}
+.footer .sup-footer .info p {
+    font-size:10px;
+    background-color:black;
+    padding:0px 10px 10px 0px;
+    color:tan;
+    opacity:0.7;
+}
+.footer .sup-footer .info p span {
+    margin-left:10px;
+}
+a:hover .fb-icon {
+    color: goldenrod;
+}
+a:hover .ins-icon {
+    color: goldenrod;
+}
+a:hover .tw-icon {
+    color: goldenrod;
+}
+}
+@media (max-width:560px){
+    .nav-mobile {
+        display:block;
+    }
+    .nav {
+        display:none;
+    }
+    /*Contact-mobile*/
+    .contactslide {
+        width: 100%;
+        background-color:black;
+        padding-bottom:30px;
+    }
+    .contactslide .contact {
+        width:90%;
+        padding:30px 5% 0 5%;
+        display:block;
+        color:tan;
+    }
+    .contactslide .contact .braedrumb p a {
+        color:tan;
+    }
+    .contactslide .contact p {
+        font-size:10px;
+        color:tan;
+    }
+    .contactslide .contact h2 {
+        margin-top:25px;
+        font-weight:600;
+        font-size:17px;
+        color:tan;
+    }
+    .contactslide .contact-info {
+        width:100%;
+        margin:3% 0 0 0;
+        color:tan;
+    }
+    .contactslide .contact-info .map-contact {
+        width:100%;        
+        margin-top:3%;
+        display:flex;
+        flex-wrap:wrap;
+    }
+    iframe {
+        width:100%;
+        
+    }
+    .contactslide .contact-info .map-contact .diachi1, .diachi2 {
+        width:100%;
+    
+    }
+    .contactslide .contact-info .map-contact .info-contact {
+        width:100%;
+        border:solid 1px tan ;
+        margin-left:0;
+    }
+    svg {
+        width:2.5%;
+    }
+    .contactslide .contact-info .map-contact .info-contact .sup-info-contact {
+        margin:20px 0 0 20px;
+        opacity:0.7;
+    }
+    .contactslide .contact-info .map-contact .info-contact h2 {
+        font-size:17px;
+    }
+    .contactslide .contact-info .map-contact .info-contact .sup-info-contact p {
+        margin:15px 0 15px 0;
+        font-size:12px;
+    }    
+    /*Formcontact*/
+.formcontact {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40%;
+}
+.formcontact h2 {
+    width:100%;
+    text-align:center;
+    margin-top:30px;
+    font-size:17px;
+}
+
+.formcontact .form {
+    width:80%;
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:10px;
+    justify-content:center;
+    
+}
+.formcontact .form .fall {
+    width:49%;
+    height:20%;
+    margin-top:4%;
+    border: 1px solid #ddd;
+    border-radius:5px;
+    font-size:15px;
+}
+.formcontact .form .fsdt {
+    margin-left:2%;
+}
+.formcontact .form .fdiachi {
+    margin-left:2%;
+}
+.formcontact .form .fcontent {
+    width:100%;
+    height:100%;
+    margin-top:4%;
+    border: 1px solid #ddd;
+    border-radius:5px;
+    padding: 10px 0 0 0;
+    font-size:15px;
+}
+.formcontact .form button {
+    line-height: 31px;
+    border-radius: 5px;
+    border: 2px solid #ed1b24;
+    text-transform: uppercase;
+    padding: 0 20px;
+    background: #fff;
+    color: #ed1b24;
+    font-weight: 400;
+    font-size: 12px;    
+    cursor: pointer;
+    transition: all .35s;
+    margin-top:2%;
+}
+.formcontact .form button:hover {
+    color: #fff;
+    background: #ed1b24;
+    box-shadow: 0 0 10px -3px #000;
+}
+    /*Footer*/
+.footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-top:2px solid black;
+    
+}
+.footer h2 {
+    width:100%;
+    text-align:center;
+    padding:20px 0 20px 0;
+    font-size:18px;
+}
+.footer .masale {
+    width:50%;
+    background-color:black;
+    padding-top:20px;
+    padding-bottom:50px;
+}
+
+.footer .masale form {
+    text-align:center;
+}
+.footer .masale form p {
+    font-size:13px;
+    margin-bottom:20px;
+    font-weight:500;
+    color:red;
+}
+.footer .masale form p label {
+    font-size:10px;
+    color:tan;
+}
+.footer .masale form .guigmail span {
+    width:15%;
+    font-size:10px;
+    border-radius:200px;
+    cursor:pointer;
+    padding:5px 5px 5px 5px;
+    background-color:white;
+    
+    
+}
+.footer .masale form p .input-gmail {
+    width:80%;
+    font-size:13px;
+    border-radius:8px;
+}
+.footer .sup-footer {
+    width:35%;
+    background-color:black;
+    padding-top:20px;
+    
+}
+.footer .icon-footer {
+    width:15%;
+    display:flex;
+    flex-wrap:wrap;
+    background:black;
+    justify-items:center;
+    align-content:center;
+   
+}
+.footer .icon-footer a {
+    display:inline-block;
+    width:100%;
+    text-align:center;
+}
+.footer .icon-footer a svg {
+    width:25%;
+    color:tan;
+ 
+}
+
+.footer .sup-footer .bonuslink {
+    text-align:justify;
+    font-size:10px;   
+    padding:10px 10px 0px 0px;
+    color:tan;
+}
+.footer .sup-footer .bonuslink p:hover {
+    color:goldenrod;
+}
+.footer .sup-footer .info {
+    margin-top:30px;
+    display:inline-block;
+}
+.footer .sup-footer .info p {
+    font-size:8px;
+    background-color:black;
+    padding:0px 10px 10px 0px;
+    color:tan;
+    opacity:0.7;
+}
+.footer .sup-footer .info p span {
+    margin-left:10px;
+}
+a:hover .fb-icon {
+    color: goldenrod;
+}
+a:hover .ins-icon {
+    color: goldenrod;
+}
+a:hover .tw-icon {
+    color: goldenrod;
+}
+}
+
+
+

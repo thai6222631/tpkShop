@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>TPK Shop</title>
+    <link href="productop1.css" rel="stylesheet" />
+    <link href="../../grid.css" rel="stylesheet" />
+    <link rel ="icon" href="https://www.vhv.rs/dpng/d/213-2136287_transparent-pirate-logo-png-straw-hat-logo-png.png" type = "image/x-icon">
+</head>
+<body>
+
+     <!-- Menu -->
+    <div class="nav">
+        <div class="item-nav">
+            <a class="item" href="../../../index.html">TRANG CHỦ</a>
+            <a class="item" href="../../../File/Tintuc/Tintuc.html">TIN TỨC</a>
+            <a class="item" href="../Sanpham.html">SẢN PHẨM</a>
+            <a class="item" href="Final.aspx">DỊCH VỤ</a>
+            <a class="item" href="../../../File/Lienhe/Lienhe.html">LIÊN HỆ</a>
+        </div>
+    </div>
+    <!-- Menu Mobile Tablet -->
+    <div class="nav-mobile">
+        <label for="nav-mobile-input" class="icon-menu-mobile">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+        </label>
+        <input hidden type="checkbox" name="" class="nav--input" id="nav-mobile-input" />
+        <div class="item-nav-mobile">
+            <a class="item-mobile" href="../../../index.html">TRANG CHỦ</a>
+            <a class="item-mobile" href="../Tintuc.html">TIN TỨC</a>
+            <a class="item-mobile" href="Final.html">SẢN PHẨM</a>
+            <a class="item-mobile" href="Final.aspx">DỊCH VỤ</a>
+            <a class="item-mobile" href="../../Lienhe/Lienhe.html">LIÊN HỆ</a>
+        </div>
+        <label for="nav-mobile-input" class="overplay "></label>
+    </div>
+     <!-- Slide Content Products -->
+    <div class="content-products">
+        <div class=" col l-12 m-12 c-12 braedrumb ">
+            <p><a href="../../../index.html">Trang chủ</a> > <a href="../Sanpham.html">Sản phẩm</a> > One Piece</p>                       
+        </div>
+        <div class="col l-4 m-4 c-12 img-product">
+            <img src="../img/productop1.jpg" />
+        </div>
+        <div class="col l-8 m-8 c-12 buy-product">
+            <h2>Mô hình One Piece ACE</h2>
+            <p class="cost-product">150.000đ</p>
+            <div class="soluong">
+                <p for="fsoluong">Số lượng</p>
+                <input type="text" placeholder="Số lượng"  name="fsoluong" required/> 
+            </div>
+            <div class="sodienthoai">
+                <p for="fosdienthoai">Số điện thoại</p>
+                <input type="text" placeholder="Số điện thoại" id="fsodienthoai"  name="fsodienthoai" required/> 
+            </div>
+            <button value="" class="dathang" id="btnContact" type="submit">Đặt hàng</button>
+
+        </div>
+        <div class="col l-6 m-12 c-12 info">
+            <div class="info-product">
+                <h2>Mô tả</h2>
+                <p>- Trọng lượng: 500g</p>
+                <p>- Chất liệu: PVC, Nhựa</p>
+                <p>- Nhân vật: PORTGAS D. ACE</p>
+                <p>- Kích thước (dài x rộng x cao): 15*15*15</p>
+                <p>- Gửi từ: USA</p>
+                <p>- Phụ kiện đi kèm: Không</p>
+                <p>- Vỏ hộp kèm sản phẩm: Full box , hộp màu đẹp</p>
+                <p>- FIGURE ANIME: ONE PIECE</p>
+            </div>
+        </div>
+        <div class="col l-6 m-12 c-12 info">
+            <div class="info-product">
+                <h2>Cam kết</h2>
+                <p>- Mô hình của TPK shop là những sản phẩm chất lượng cao nhất</p>
+                <p>- Bảo hành tất cả FIGURE, mô hình cả gẫy vỡ trong quá trình vận chuyển</p>
+                <p>- 7 ngày đổi trả hàng thoải mái </p>
+                <p>- Tất cả sản phẩm đều được kiểm tra cẩn thận trước khi đóng gói </p>
+                <p>- Cam kết hàng chuẩn như ảnh</p>
+                <p>- Nếu gửi sai mẫu xin tặng luôn khách mẫu đó và gửi cho khách mẫu khách đặt, shop chịu phí vận chuyển luôn</p>
+                <p>- Đảm bảo hàng chính hãng 100%</p>
+                <p>- Hotline chăm sóc khách hàng, giải đáp thắc mắc trong phần LIÊN HỆ</p>
+            </div>
+        </div>
+        <div class="col l-12 m-12 c-12 sanphamlienquan">
+            <h1>Sản phẩm liên quan</h1>
+        </div>
+        <div class="col l-2 c-12 item-productlienquan">
+            <img src="../img/productop2.jpg" />
+            <a href="#"><h2>
+                Chuột có dây Zoro
+            </h2></a>
+            <p>100.000đ</p>
+        </div>
+        <div class="col l-2 c-12 item-productlienquan">
+            <img src="../img/productop3.jpg" />
+           <a href="#"> <h2>
+                Bàn phím One Piece
+            </h2></a>
+            <p>300.000đ</p>
+        </div>
+        <div class="col l-2 c-12 item-productlienquan">
+            <img src="../img/productop4.jpg" />
+            <a href="#"><h2>
+                Lót chuột Luffy
+            </h2></a>
+            <p>80.000đ</p>
+        </div>
+        <div class="col l-2 c-12 item-productlienquan">
+            <img src="../img/productop5.jpg" />
+            <a href="#"><h2>
+                Mô hình Luffy Gear 4
+            </h2></a>
+            <p>200.000đ</p>
+        </div>
+        <div class="col l-2 c-12 item-productlienquan">
+            <img src="../img/productop6.jpg" />
+            <a href="#"><h2>
+                Sạc One Piece
+            </h2></a>
+            <p>50.000đ</p>
+        </div>
+        <div class="col l-2 c-12 item-productlienquan">
+            <img src="../img/productop7.jpg" />
+            <a href="#"><h2>
+                Mô hình đô đốc Aokiji
+            </h2></a>
+            <p>150.000đ</p>
+        </div>
+    </div>
+
+
+     <!-- Footer -->
+    <div class="footer">
+        <h2>TPK Shop xin chân thành cảm ơn quý khách</h2>
+        <div class="masale">            
+            <form class="nhanmasale">
+                <p>Nhận mã sale</p>
+                <p>
+                    <label for="gmail">Gmail:</label>
+                    <input class="input-gmail"  type="text"  required >                    
+                </p>
+                <div class="guigmail" ><span>Nhận mã</span></div>
+            </form>
+        </div>
+        <div class="sup-footer">            
+            <p class="bonuslink">Xem Anime: <a style="color:white" href="https://vuighe.net/">vuighe.net</a></p>
+            <p class="bonuslink">Đọc truyện: <a style="color:white" href="https://www.nettruyenonline.com/">nettruyenonline.com</a></p>
+            <div class="info">
+                <p>Địa chỉ 1: 22/12, Nhà Bè, TPHCM<span>SĐT: 1234567890</span> </p> 
+                <p>Địa chỉ 2: Nguyễn Văn Linh, Q7, TPHCM<span>SĐT: 1234567890</span> </p>
+            </div>
+        </div>
+        <div class="icon-footer">
+                <a  href="#"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="fb-icon" fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg></a>
+                <a  href="#"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path class="ins-icon" fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a>
+                <a class="tw-icon" href="#"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="tw-icon" fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>
+         </div>
+    </div>
+    
+     <!-- Hiển thị mã sale -->
+    <div class="outputmasale">
+        <h2>Mã sale 20%</h2>
+        <span>Gomu Gomu No</span>
+        <div class="closesale"><span>Đóng</span></div>
+    </div>
+    
+    <!-- JS -->
+    <!-- Outputmasale -->
+    <script>
+        const Guigmail = document.querySelector('.guigmail')
+        const Outputmasale = document.querySelector('.outputmasale')
+        const Closemasale = document.querySelector('.closesale')
+        function showMasale() {
+            Outputmasale.classList.add('open')
+        }
+        function closeMasale() {
+            Outputmasale.classList.remove('open')
+        }
+
+        Guigmail.addEventListener('click', showMasale)
+        Closemasale.addEventListener('click', closeMasale)
+
+    </script>
+</body>
+</html>
+
